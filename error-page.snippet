@@ -1,0 +1,15 @@
+<div class="error-page">
+	
+	<h1>Ooops! Error {{ error_code }}</h1>
+
+	{% case error_code %}
+  	{% when 404 %}
+  		<p>File not found.</p>
+	{% else %} 
+	{% endcase %} 
+
+	{% if current_user.admin? %}
+		<p><a href="/__/items/new" class="btn"><i class="icon-plus"></i> Create Item</a></p>
+	{% endif %}
+	
+</div>
