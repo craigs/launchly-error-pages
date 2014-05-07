@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="launchly-error-pages : launch.ly Custom Error Pages" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>launchly-error-pages</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/launchly/launchly-error-pages">View on GitHub</a>
+
+          <h1 id="project_title">launchly-error-pages</h1>
+          <h2 id="project_tagline">launch.ly Custom Error Pages</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/launchly/launchly-error-pages/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/launchly/launchly-error-pages/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="launchly-error-pages" class="anchor" href="#launchly-error-pages"><span class="octicon octicon-link"></span></a>launch.ly error pages</h1>
+
+<p>launch.ly Custom Error Pages Template</p>
+
+<h2>
+<a name="how-to-make-a-custom-404-page-in-launchly" class="anchor" href="#how-to-make-a-custom-404-page-in-launchly"><span class="octicon octicon-link"></span></a>How to make a custom 404 page in launch.ly</h2>
+
+<h3>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>Just create a snippet with the address pattern <strong>ERROR</strong> and copy in the contents of error-page.snippet. You can also add the styles from error-page.less to your theme style sets.</p>
+
+<h3>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>By default, <a href="http://launch.ly">launch.ly</a> has a bare bones internal error message snippet for when you hit a 4xx error. But all that says is something like "404. File not found". You probably would like to add a bit of style or even better, display something that might help the user end up in the right place. Things like a search box or a list of categories might be a great idea.</p>
+
+<p>To override the default error page display, you will need to create an error page snippet. There is nothing special about this snippet except for the fact that the address pattern is set to "ERROR". You see, when launch.ly cannot find an item for a given link, it first looks to see if there is a snippet with the address pattern "ERROR" and displays that snippet if one exists, otherwise you will get the default internal message.</p>
+
+<p>There are <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes">heaps of error codes</a>, and you have access to what the detected error code encountered was through the error_code variable. This way you can customise the messages based on the error code was encountered. I normally handle 404 messages and have a default page for all other error types.</p>
+
+<p>The rest is up to you. Be creative.</p>
+
+<h3>
+<a name="a-little-inspiration" class="anchor" href="#a-little-inspiration"><span class="octicon octicon-link"></span></a>A little inspiration</h3>
+
+<p>OK, so here are some really great and creative 404 pages to inspire you.</p>
+
+<ul>
+<li>
+<a href="http://www.lego.com/file-not-found/">lego.com</a><br>
+lego.com have a great page. It features a single button linking back to the home page with a simple file not found message.</li>
+<li>
+<a href="http://www.titleist.com/file-not-found/">titleist.com</a><br>
+Being a golfing company, having a heap of golfers looking for a lost ball is a great analogy. They also include buttons linking to their major product sections.</li>
+<li>
+<a href="https://github.com/file-not-found/">github.com</a><br>
+github is a source code hosting platform which we use and love. In catering for nerds, a Star Wars reference is pretty obvious. But it features a search box to let you find other source repositories.</li>
+<li>
+<a href="http://techcrunch.com/file-not-found/">techcrunch.com</a><br>
+Tech Crunch has a wordy 404 page that links really well to a search page, but also asks you to report the error as well.</li>
+<li>
+<a href="http://mashable.com/file-not-found/">mashable.com</a><br>
+One big search box ... and a little humour.</li>
+</ul><h3>
+<a name="404-tracking-and-correcting" class="anchor" href="#404-tracking-and-correcting"><span class="octicon octicon-link"></span></a>404 Tracking and Correcting</h3>
+
+<p>If you have enabled Google Analytics on your account, 404 errors are automatically tagged as a custom event.</p>
+
+<p>Visit google.com/analytics to check your 404 errors under Content &gt; Events &gt; Overview and you will see "Error" under the "Event Category" section. Drill down and see if you can fix any errors up by adding links to other items. If you have removed a product and it has been replaced by a new product, add the old links to your new item to solve the 404 errors. Your customers will love you for it.</p>
+
+<h3>
+<a name="dont-forget-its-a-great-marketing-opportunity" class="anchor" href="#dont-forget-its-a-great-marketing-opportunity"><span class="octicon octicon-link"></span></a>Don't forget, it's a great marketing opportunity.</h3>
+
+<p>Remember, your customer is looking at this page. I like to think of it as if someone walked in to your shop and didn't know where to go. You can either let them wander around and watch them walk out, of offer some help. Give them avenues to follow you on social media, and put some love in to it. I have even seen people use videos to great effect even inviting them in to the real store instead of being online.
+Want to know how to make custom 404 error pages in launch.ly? I created a github project and posted an article at <a href="http://dev.launch.ly/blog/how-to-make-a-custom-404-page-in-launch-ly">http://dev.launch.ly/blog/how-to-make-a-custom-404-page-in-launch-ly</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">launchly-error-pages maintained by <a href="https://github.com/launchly">launchly</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-30004473-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
